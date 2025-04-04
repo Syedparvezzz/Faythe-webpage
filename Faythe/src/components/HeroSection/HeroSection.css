@@ -1,0 +1,54 @@
+/* HeroSection.css */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(200, 71, 113, 0.5), rgba(236, 188, 85, 0.5)), url("../../assets/jesus.jpg") no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-cta {
+    background: linear-gradient(90deg, #C84771, #ECBC55);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-cta:hover {
+    background: linear-gradient(90deg, #ECBC55, #C84771);
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 20px;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+  

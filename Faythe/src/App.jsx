@@ -12,11 +12,7 @@ function App() {
     <div>
       <Navbar /> 
       <HeroSection />
-      <Overview />
       <Features />
-      <About />
-      <Download />
-      <Footer />
     </div>
   );
 }
