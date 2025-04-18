@@ -1,0 +1,253 @@
+.customizable-section {
+  padding: 80px 20px;
+  padding-bottom: 50px;
+  
+  background: #fff;
+  font-family: 'Manrope', sans-serif;
+}
+
+.customizable-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  margin: auto;
+  gap: 70px; /* Increased for better spacing on desktop */
+  flex-wrap: wrap;
+}
+
+.customizable-image {
+  flex: 1;
+  background: #FFF4E6;
+  border-radius: 30px;
+  padding: 40px 20px 0 20px; /* Added side padding for smaller screens */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.customizable-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0 0 30px 30px;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+
+
+.customizable-content {
+  /* flex: 1; */
+  max-width: 600px;
+}
+
+.customizable-label {
+  color: #de6f00;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.customizable-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 47px;
+}
+
+.customizable-description {
+  color: #afa8a8;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.customizable-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.customizable-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 290px;
+  transition: all 0.3s ease;
+}
+
+.customizable-card:hover {
+  background: linear-gradient(135deg, #C84771, #ECBC55);
+  color: white;
+}
+
+.customizable-card:hover h4,
+.customizable-card:hover p {
+  color: white;
+}
+
+.customizable-card:hover .icon {
+  background: transparent;
+  color: white;
+}
+
+.customizable-card .icon {
+  background: transparent;
+  padding: 0px;
+  border-radius: 10px;
+  color: #de6f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customizable-card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.customizable-card p {
+  margin: 0;
+  color: #afa8a8;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.customizable-link {
+  display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.customizable-link:hover {
+  color: #C84771;
+}
+
+/* 🌐 Responsive Styles */
+@media (max-width: 768px) {
+  .customizable-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px; /* Adds space between image and content */
+  }
+
+  .customizable-image img {
+    max-width: 100%;
+  }
+
+  .customizable-content {
+    max-width: 100%;
+  }
+
+  .customizable-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .customizable-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .customizable-cards {
+    justify-content: center;
+  }
+
+  .customizable-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .customizable-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .customizable-image {
+    padding: 30px 16px 0 16px;
+    min-height: 300px;
+  }
+
+  .customizable-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .customizable-content {
+    max-width: 100%;
+  }
+
+  .customizable-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .customizable-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .customizable-cards {
+    justify-content: center;
+  }
+
+  .customizable-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1090px) {
+  .customizable-container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .customizable-image {
+    padding: 30px 16px 0 16px;
+    min-height: 400px;
+    width: 100%;
+  }
+
+  .customizable-image img {
+    max-width: 90%;
+  }
+
+  .customizable-content {
+    max-width: 100%;
+  }
+
+  .customizable-cards {
+    justify-content: center;
+  }
+
+  .customizable-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
