@@ -1,0 +1,214 @@
+.download-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 240px 20px 60px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  margin: auto;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.download-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mockup-frame {
+  flex: 1;
+  background: #FFF4E6;
+  border-radius: 30px;
+  padding: 40px 20px 0 20px; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 500px;
+  width: 100%;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
+.mockup-frame img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0 0 30px 30px;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.download-text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.download-tag {
+  color: #de6f00;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.download-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 16px;
+}
+
+.download-subtitle {
+  color: #7d7d7d;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.store-buttons1 {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.store-btn {
+  height: 45px;
+  cursor: pointer;
+}
+
+.install-now {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.install-text {
+  font-size: 15px;
+  color: #111;
+}
+
+.install-text a {
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.install-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.install-link:hover {
+  color: #C84771;
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 1090px) {
+  .download-container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .mockup-frame {
+    padding: 30px 16px 0 16px;
+    min-height: 400px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .mockup-frame img {
+    max-width: 100%;
+  }
+
+  .download-text-content {
+    max-width: 100%;
+  }
+
+  .download-subtitle {
+    padding-left: 120px;
+    padding-right: 120px; 
+  }
+
+  .store-buttons1 {
+    justify-content: center;
+  }
+
+  .install-now {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+.download-section {
+    padding-top: 250px;
+  }
+
+  .mockup-frame {
+    max-width: 100%;
+  }
+
+  .download-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .download-subtitle {
+    font-size: 15px;
+    line-height: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .store-btn {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-section {
+    padding-top: 120px;
+  }
+
+  .mockup-frame {
+    max-width: 280px;
+    min-height: 320px;
+  }
+
+  .download-title {
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 10px;
+    padding-right: 10px; 
+  }
+
+  .download-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+

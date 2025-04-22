@@ -141,7 +141,7 @@
   color: #C84771;
 }
 
-/* 🌐 Responsive Styles */
+
 @media (max-width: 768px) {
   .customizable-container {
     flex-direction: column;

@@ -1,0 +1,142 @@
+.footer {
+    background-color: #1a2433;
+    color: #a0a0a0;
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+    font-family: 'Inter', sans-serif;
+    height: auto;  /* Set to auto for flexible height */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+    gap: 40px; /* Increased gap between items */
+    flex-wrap: wrap;
+    padding: 0 20px;  /* Proper padding to match the layout */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    height: 32px;
+}
+
+.footer-brand {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px; /* Increased gap between social icons for better spacing */
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 6px;
+    color: #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    border-color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;  /* Reduced gap between sections when stacked */
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+        width: 100%;  /* Ensure full width for these sections */
+    }
+
+    .footer-brand {
+        font-size: 16px;  /* Slightly reduce font size */
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px; /* Increased gap between social icons */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Reduced gap for small screens */
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-brand {
+        font-size: 14px;  /* Reduce font size even more */
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 10px; /* Decreased gap to make icons fit better */
+    }
+
+    .social-icons a {
+        padding: 5px;  /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;  /* Reduced padding for small screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;  /* Reduced space between sections on smaller screens */
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-brand {
+        font-size: 12px;  /* Further reduce font size */
+    }
+
+    .social-icons a {
+        padding: 4px;  /* Further reduce icon padding */
+    }
+}

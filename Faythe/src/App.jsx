@@ -4,10 +4,11 @@ import HeroSection from './components/Hero/index.jsx';
 import Features from './components/FeaturesSection/index.jsx';
 import Footer from './components/Footer';
 import About from './components/AboutSection';
-import Download from './components/DownloadSection';
+import DownloadSection from './components/DownloadSection/index.jsx';
 import Hero from './components/Hero/index.jsx';
 import ScreenshotCarousel from './components/ScreenshotCarousel/index.jsx';
 import FaqSection from './components/FaqSection/index.jsx';
+import ContactSection from './components/ContactSection/index.jsx';
 
 function App() {
   return (
@@ -16,7 +17,10 @@ function App() {
       <Hero />
       <Features />
       <ScreenshotCarousel />
-      {/* <FaqSection /> */}
+      <FaqSection />
+      <DownloadSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
