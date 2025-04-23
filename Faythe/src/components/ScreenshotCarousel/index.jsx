@@ -32,7 +32,7 @@ const ScreenshotCarousel = () => {
   }, []);
 
   return (
-    <section className="screenshot-section">
+    <section id="application"className="screenshot-section">
       <div className="screenshot-header">
         <p className="section-subtitle">SCREENSHOTS</p>
         <h2 className="section-title">Simple & Beautiful Interface</h2>

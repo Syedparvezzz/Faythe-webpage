@@ -1,15 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from "../../assets/logo.svg";
-import {
-  ShoppingCart,
-  Dribbble,
-  Linkedin,
-  Facebook,
-  Instagram,
-  Twitter,
-  Mail
-} from 'lucide-react';
+import logo from "../../assets/logo1.png";
 
 const Footer = () => {
   return (
@@ -26,14 +17,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-right">
-          <div className="social-icons">
-            <a href="#"><ShoppingCart size={16} /></a>
-            <a href="#"><Dribbble size={16} /></a>
-            <a href="#"><Linkedin size={16} /></a>
-            <a href="#"><Facebook size={16} /></a>
-            <a href="#"><Instagram size={16} /></a>
-            <a href="#"><Twitter size={16} /></a>
-            <a href="#"><Mail size={16} /></a>
+          <div className="footer-links">
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
           </div>
         </div>
       </div>

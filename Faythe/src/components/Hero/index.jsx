@@ -11,7 +11,7 @@ const Hero = () => {
       className="hero-section"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="hero-content">
+      <div id="home" className="hero-content">
         <h1>Faith. Connect. Grow.</h1>
         <p>A community for believers. A place for spiritual growth.</p>
         <div className="download-buttons">

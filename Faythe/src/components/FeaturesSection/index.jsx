@@ -1,3 +1,5 @@
+// components/FeaturesSection/index.jsx
+
 import React from 'react';
 import {
   Monitor,
@@ -12,7 +14,7 @@ import './Features.css';
 import Customizable from '../Customize';
 import ElegantDesign from '../ElegantDesign';
 
-const Features = () => {
+const FeaturesSection = () => {
   const leftFeatures = [
     {
       title: "Use On Any Device",
@@ -50,7 +52,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="features-section">
+    <section id="features" className="features-section">
       <div className="container">
         <div className="section-header">
           <h1 className="section-title">Discover Powerful Features</h1>
@@ -95,4 +97,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default FeaturesSection;

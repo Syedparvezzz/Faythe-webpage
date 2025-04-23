@@ -7,7 +7,7 @@ import PlayStore from "../../assets/DownloadPlayStore.png";
 
 const DownloadSection = () => {
   return (
-    <section className="download-section">
+    <section id="download" className="download-section">
       <div className="download-container">
         <div className="download-mockup">
           <div className="mockup-frame">

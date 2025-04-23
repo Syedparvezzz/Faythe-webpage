@@ -128,6 +128,14 @@
     transform: translateX(5px);
 }
 
+.nav-links a.active-link {
+    background: linear-gradient(to right, #C84771, #ECBC55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+
 @keyframes slideDown {
     from {
         opacity: 0;
