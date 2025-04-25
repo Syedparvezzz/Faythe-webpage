@@ -1,26 +1,26 @@
 import React from "react";
 import "./DownloadSection.css";
-import featuresImg from "../../assets/Customize.png";
+import featuresImg from "../../assets/Download.png";
 import { Smartphone, ArrowRight } from "lucide-react";
 import AppStore from "../../assets/DownloadAppStore.png";
 import PlayStore from "../../assets/DownloadPlayStore.png";
 
 const DownloadSection = () => {
   return (
-    <section id="download" className="download-section">
+    <section id="download" className="download-section" data-aos="fade-up">
       <div className="download-container">
-        <div className="download-mockup">
+        <div className="download-mockup" data-aos="fade-left">
           <div className="mockup-frame">
-            <img src={featuresImg} alt="App Preview" />
+            <img src={featuresImg} alt="App Preview" loading="lazy" />
           </div>
         </div>
 
-        <div className="download-text-content">
-          <p className="download-tag">MOBILE APPS</p>
+        <div className="download-text-content" data-aos="fade-right">
+          {/* <p className="download-tag">MOBILE APPS</p> */}
           <h2 className="download-title">Available for your <br/>Smartphones</h2>
           <p className="download-subtitle">
             Unleash the power of our platform with a multitude of powerful features,
-            empowering you to achieve your goals.
+            empowering your spritual goals.
           </p>
 
           <div className="store-buttons1">
@@ -28,11 +28,13 @@ const DownloadSection = () => {
               src={AppStore}
               alt="Download on App Store"
               className="store-btn"
+              loading="lazy"
             />
             <img
               src={PlayStore} 
               alt="Get it on Google Play"
               className="store-btn"
+              loading="lazy"
             />
           </div>
 

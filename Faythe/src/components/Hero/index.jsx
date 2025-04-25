@@ -3,7 +3,7 @@ import './Hero.css';
 import bgImage from '../../assets/Jesus2.jpg';
 import appStore from '../../assets/DownloadAppStore.png';
 import playStore from '../../assets/DownloadPlayStore.png';
-import phone from '../../assets/Phone1.png'; 
+import phone from '../../assets/Phone01.svg'; 
 
 const Hero = () => {
   return (
@@ -13,16 +13,16 @@ const Hero = () => {
     >
       <div id="home" className="hero-content">
         <h1>Faith. Connect. Grow.</h1>
-        <p>A community for believers. A place for spiritual growth.</p>
+        <p>A community for believers. Share Your Prayers, Strengthen Your Faith.</p>
         <div className="download-buttons">
-          <img src={appStore} alt="Download on App Store" />
-          <img src={playStore} alt="Get it on Google Play" />
+          <img src={appStore} alt="Download on App Store" loading="lazy" />
+          <img src={playStore} alt="Get it on Google Play" loading="lazy" />
         </div>
       </div>
 
       <div className="graphic-section">
         <div className="red-circle">
-          <img src={phone} alt="Phone mockup" className="single-phone" />
+          <img src={phone} alt="Phone mockup" className="single-phone" loading="lazy" />
         </div>
       </div>
     </section>

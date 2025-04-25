@@ -1,0 +1,94 @@
+/* Modal Overlay: fullscreen blur background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal content wrapper */
+  .modal-full {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Toolbar: Top right buttons */
+  .modal-toolbar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+    z-index: 10000;
+  }
+  
+  .modal-toolbar button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .modal-toolbar button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Image & navigation arrows */
+  .modal-image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 95%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Left & right arrow buttons */
+  .modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .modal-arrow.left {
+    left: 20px;
+  }
+  
+  .modal-arrow.right {
+    right: 20px;
+  }
+  
+  .modal-arrow:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  

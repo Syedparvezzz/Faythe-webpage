@@ -45,7 +45,7 @@
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
 }
@@ -165,7 +165,7 @@
 @media (max-width: 768px) {
 
 .download-section {
-    padding-top: 250px;
+    padding-top: 100px;
   }
 
   .mockup-frame {
@@ -191,7 +191,7 @@
 
 @media (max-width: 480px) {
   .download-section {
-    padding-top: 120px;
+    padding-top: 50px;
   }
 
   .mockup-frame {

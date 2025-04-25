@@ -1,28 +1,32 @@
 import React from "react";
 import "./ElegantDesign.css";
-import CustomizeImage from '../../assets/customize.png';
-import { Check, ArrowRight } from "lucide-react";
+import Elegantdesign from '../../assets/Elegantdesign.png';
+import { Check } from "lucide-react";
 
 const ElegantDesign = () => {
   return (
-    <section className="elegant-container">
-      <div className="elegant-left">
-        <p className="elegant-subtitle">ELEGANT DESIGN</p>
-        <h2 className="elegant-title">Share your photos with friends easily</h2>
+    <section className="elegant-container" data-aos="fade-up">
+      <div className="elegant-left" data-aos="fade-right">
+        {/* <p className="elegant-subtitle">ELEGANT DESIGN</p> */}
+        <h2 className="elegant-title">Share your Faith as every post is your Prayer</h2>
         <p className="elegant-description">
-          Unleash the power of our platform with a multitude of powerful features, empowering you to achieve your goals.
+        In this sacred space, your words carry weight — not just likes and reactions, but real prayers and heavenly attention.
         </p>
         <ul className="elegant-list">
-          <li><Check className="check-icon" /> Digital Marketing Solutions for Tomorrow</li>
-          <li><Check className="check-icon" /> Our Talented & Experienced Marketing Agency</li>
-          <li><Check className="check-icon" /> Create your own skin to match your brand</li>
+          <li data-aos="fade-up" data-aos-delay="100">
+            <Check className="check-icon" /> Hearts unite to pray for you
+          </li>
+          <li data-aos="fade-up" data-aos-delay="200">
+            <Check className="check-icon" /> People are reminded they're not alone
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <Check className="check-icon" /> Heaven hears what you write
+          </li>
         </ul>
-        <a href="#" className="elegant-link">
-          Learn More <ArrowRight className="arrow-icon" />
-        </a>
       </div>
-      <div className="elegant-right">
-        <img src={CustomizeImage} alt="Elegant Design" />
+
+      <div className="elegant-right" data-aos="fade-left">
+        <img src={Elegantdesign} alt="Elegant Design" loading="lazy" />
       </div>
     </section>
   );

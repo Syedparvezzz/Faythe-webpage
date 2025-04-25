@@ -20,6 +20,7 @@
     font-weight: 700;      
     color: #000000;
     margin: 0;
+    padding: 0 20px;
   }
   
   .hero-content p {
@@ -27,6 +28,7 @@
     font-weight: 400;
     color: #6e7c91;
     margin-top: 20px;
+    Padding: 0 20px;
   }
   
   .download-buttons {
@@ -77,6 +79,7 @@
     .red-circle {
       width: 420px;
       height: 420px;
+      margin-top: 80px;
     }
   
     .single-phone {
@@ -90,6 +93,7 @@
     .red-circle {
       width: 300px;
       height: 300px;
+      margin-top: 80px;
     }
   
     .single-phone {

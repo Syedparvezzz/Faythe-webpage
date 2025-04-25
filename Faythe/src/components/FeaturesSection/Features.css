@@ -114,8 +114,8 @@
   
   .features-image-centered img {
     width: 320px;
-    height: 636px;
-    object-fit: cover;
+    height: 600px;
+    object-fit: contain;
     display: block;
   }
   

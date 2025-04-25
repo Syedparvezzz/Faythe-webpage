@@ -103,7 +103,7 @@
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
 }

@@ -5,7 +5,6 @@ import AppStore from "../../assets/AppStore.png";
 import Playstore from "../../assets/Playstore.png";
 import { Menu, X } from "lucide-react";
 
-// 💡 Keep lowercase & hyphenated ids — no spaces!
 const sectionIds = ["home", "features", "application", "faqs", "download", "contact"];
 
 function Navbar() {
@@ -21,7 +20,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ⭐ IntersectionObserver to track active section
   useEffect(() => {
     const options = {
       root: null,
@@ -32,7 +30,6 @@ function Navbar() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log("🟢 Visible section:", entry.target.id); // Debug
           setActiveSection(entry.target.id);
         }
       });
@@ -49,9 +46,10 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const isActive = (id) => (activeSection === id ? "active-link" : "");
 
-  // 🧠 For Display: Capitalize + Custom Name
+  // ✅ Custom names
   const getDisplayName = (id) => {
     if (id === "contact") return "Contact Us";
+    if (id === "faqs") return "FAQs";
     return id.charAt(0).toUpperCase() + id.slice(1);
   };
 

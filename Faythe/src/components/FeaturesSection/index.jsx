@@ -1,15 +1,13 @@
-// components/FeaturesSection/index.jsx
-
 import React from 'react';
 import {
-  Monitor,
-  Feather,
-  Eye,
-  UserCheck,
-  Smartphone as ResponsiveIcon,
-  Heart
+  Heart,
+  Users,
+  Notebook,
+  Bot,
+  ShoppingCart,
+  Flame
 } from 'lucide-react';
-import FeaturesImage from '../../assets/Features.png';
+import FeaturesImage from '../../assets/Customizable.svg';
 import './Features.css';
 import Customizable from '../Customize';
 import ElegantDesign from '../ElegantDesign';
@@ -17,54 +15,60 @@ import ElegantDesign from '../ElegantDesign';
 const FeaturesSection = () => {
   const leftFeatures = [
     {
-      title: "Use On Any Device",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <Monitor size={32} />
+      title: "Prayer Wall",
+      description: "Post prayer requests and receive support from the community through prayers",
+      icon: <Heart size={32} />
     },
     {
-      title: "Feather Icons",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <Feather size={32} />
+      title: "Community Groups",
+      description: "Join groups based on interests or needs to foster deeper faith and connections",
+      icon: <Users size={32} />
     },
     {
-      title: "Retina Ready",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <Eye size={32} />
+      title: "Journal & Reflection",
+      description: "A private space to reflect, document, and share your personal spiritual journey.",
+      icon: <Notebook size={32} />
     }
   ];
 
   const rightFeatures = [
     {
-      title: "W3c Valid Code",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <UserCheck size={32} />
+      title: "KOOMBA Support",
+      description: "An AI chatbot offering quick answers and prayer support for users anytime.",
+      icon: <Bot size={32} />
     },
     {
-      title: "Fully Responsive",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <ResponsiveIcon size={32} />
+      title: "E-commerce Store",
+      description: "A marketplace for Christian resources to strengthen your faith.",
+      icon: <ShoppingCart size={32} />
     },
     {
-      title: "Browser Compatibility",
-      description: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
-      icon: <Heart size={32} />
+      title: "Streak Tracker",
+      description: "Track your daily prayer, Bible reading, and spiritual growth with motivational streaks.",
+      icon: <Flame size={32} />
     }
   ];
 
   return (
     <section id="features" className="features-section">
       <div className="container">
-        <div className="section-header">
-          <h1 className="section-title">Discover Powerful Features</h1>
+        <div className="section-header" data-aos="fade-up">
+          <h1 className="section-title">Explore Faythe Features</h1>
           <p className="section-description">
-            Unleash the power of our platform with a multitude of powerful features, empowering you to achieve your goals.
+            Explore Features Rooted in Grace. <br />
+            Designed to Elevate Your Faith Journey with us.
           </p>
         </div>
 
         <div className="features-layout">
           <div className="features-column left-column">
             {leftFeatures.map((feature, index) => (
-              <div className="feature-card align-left" key={index}>
+              <div
+                className="feature-card align-left"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <div className="feature-text">
                   <h3 className="feature-title">{feature.title}</h3>
                   <p className="feature-description">{feature.description}</p>
@@ -74,13 +78,18 @@ const FeaturesSection = () => {
             ))}
           </div>
 
-          <div className="features-image-centered">
-            <img src={FeaturesImage} alt="Features" />
+          <div className="features-image-centered" data-aos="fade-up" data-aos-delay="200">
+            <img src={FeaturesImage} alt="Features" loading="lazy" />
           </div>
 
           <div className="features-column">
             {rightFeatures.map((feature, index) => (
-              <div className="feature-card align-left" key={index}>
+              <div
+                className="feature-card align-left"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <div className="icon-box">{feature.icon}</div>
                 <div className="feature-text">
                   <h3 className="feature-title">{feature.title}</h3>
@@ -91,8 +100,6 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-      <Customizable />
-      <ElegantDesign />
     </section>
   );
 };

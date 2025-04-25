@@ -1,45 +1,46 @@
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import "./FaqSection.css";
-import featuresImg from "../../assets/features.png";
+import faqImg from "../../assets/FAQs.svg";
 
 const faqs = [
   {
-    question: "How does it work ?",
+    question: "What makes this app different?",
     answer:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+      "Unlike typical social media, this app is built on faith. It’s a safe space where you can connect, pray, and grow spiritually.",
   },
   {
-    question: "Do I need a designer to use Appever ?",
-    answer: "No, our platform is designed for everyone including non-designers.",
+    question: "Is the app free to use?",
+    answer: "Absolutely! Most of the core features — including the Prayer Wall, and community groups — are completely free. Additional features may be available in the future through premium options.",
   },
   {
-    question: "What do I need to do to start selling ?",
-    answer: "Just sign up, create your listing, and start promoting your product.",
+    question: "Can I share my prayer requests with the community?",
+    answer: "Yes, absolutely! You can post your prayer needs on the Prayer Wall, and other users will be able to support you with prayers and uplifting comments.",
   },
   {
-    question: "What happens when I receive an order ?",
-    answer: "You’ll get notified and can manage everything from your dashboard.",
+    question: "What are Community Groups used for?",
+    answer: "Community Groups help you find and connect with believers who share your interests or church community.",
   },
 ];
 
 const FaqSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // one open by default
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFAQ = (index) => {
     if (index !== activeIndex) {
-      setActiveIndex(index); // always switch, never close all
+      setActiveIndex(index);
     }
   };
 
   return (
-    <section className="faq-wrapper" id="faqs">
+    <section className="faq-wrapper" id="faqs" data-aos="fade-up">
       <div className="faq-section">
-        <div className="faq-left">
-          <h4 className="faq-tag">FAQS</h4>
+        <div className="faq-left" data-aos="fade-right">
+          {/* <h4 className="faq-tag">FAQS</h4> */}
           <h2 className="faq-title">Have Questions? Look Here</h2>
           <p className="faq-subtitle">
-            Unleash the power of our platform with a multitude of powerful features, empowering you to achieve your goals.
+           If you have a question about faythe, you are at the right place. <br />
+           We're here to guide you along.
           </p>
 
           <div className="faq-list">
@@ -48,6 +49,8 @@ const FaqSection = () => {
                 key={index}
                 className={`faq-item ${activeIndex === index ? "active" : ""}`}
                 onClick={() => toggleFAQ(index)}
+                // data-aos="fade-up" 
+                data-aos-delay={index * 100} // delay to stagger the effects
               >
                 <div className="faq-question">
                   {faq.question}
@@ -58,15 +61,12 @@ const FaqSection = () => {
             ))}
           </div>
 
-          <a href="#" className="faq-more">
-            Find Out More <ArrowRight size={20} />
-          </a>
         </div>
 
         <div className="faq-right">
           <div className="mockup-background">
             <div className="phone-mockup">
-              <img src={featuresImg} alt="App Preview" className="mockup-img" />
+              <img src={faqImg} alt="App Preview" className="mockup-img" loading="lazy" />
             </div>
           </div>
         </div>
