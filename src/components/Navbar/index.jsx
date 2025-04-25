@@ -43,6 +43,19 @@ function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      window.dispatchEvent(new Event("resize"));
+    };
+
+    handleResize(); // Fire once on mount
+    window.addEventListener("load", handleResize); // Fire again when images are loaded
+
+    return () => {
+      window.removeEventListener("load", handleResize);
+    };
+  }, []);
+
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const isActive = (id) => (activeSection === id ? "active-link" : "");
 

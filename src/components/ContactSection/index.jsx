@@ -6,11 +6,11 @@ const ContactSection = () => {
   return (
     <div id="contact" className="contact-section" data-aos="fade-up">
       <div className="contact-container">
-        <div className="contact-image" data-aos="fade-right">
+        <div className="contact-image" data-aos="fade-up">
           <img src={ContactImage} alt="Contact Illustration" loading="lazy" />
         </div>
 
-        <div className="contact-info" data-aos="fade-left">
+        <div className="contact-info" data-aos="fade-up">
           {/* <span className="contact-tag">Contact Us</span> */}
           <h2 className="contact-title">We Love to Hear from You!</h2>
 

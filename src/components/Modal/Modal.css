@@ -92,3 +92,57 @@
     background: rgba(255, 255, 255, 0.2);
   }
   
+  @media (max-width: 768px) {
+    .modal-toolbar {
+      top: 12px;
+      right: 12px;
+      gap: 8px;
+    }
+  
+    .modal-toolbar button {
+      padding: 6px;
+      border-radius: 6px;
+    }
+  
+    .modal-arrow {
+      padding: 8px;
+    }
+  
+    .modal-arrow.left {
+      left: 10px;
+    }
+  
+    .modal-arrow.right {
+      right: 10px;
+    }
+  
+    .modal-image {
+      max-width: 95%;
+      max-height: 80%;
+      border-radius: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-toolbar {
+      top: 8px;
+      right: 8px;
+      gap: 6px;
+    }
+  
+    .modal-toolbar button {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .modal-arrow {
+      padding: 6px;
+    }
+  
+    .modal-image {
+      max-width: 90%;
+      max-height: 70%;
+      border-radius: 6px;
+    }
+  }
+  

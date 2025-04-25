@@ -7,10 +7,10 @@ const Customizable = () => {
   return (
     <section className="customizable-section" data-aos="fade-up">
       <div className="customizable-container">
-        <div className="customizable-image" data-aos="fade-right">
+        <div className="customizable-image" data-aos="fade-up">
           <img src={CustomizeImage} alt="Customize" loading="lazy" />
         </div>
-        <div className="customizable-content" data-aos="fade-left">
+        <div className="customizable-content" data-aos="fade-up">
           {/* <p className="customizable-label">CUSTOMIZABLE</p> */}
           <h2 className="customizable-title">
           How the App Strengthens <br/>Faith Daily

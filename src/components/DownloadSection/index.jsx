@@ -9,13 +9,13 @@ const DownloadSection = () => {
   return (
     <section id="download" className="download-section" data-aos="fade-up">
       <div className="download-container">
-        <div className="download-mockup" data-aos="fade-left">
+        <div className="download-mockup" data-aos="fade-up">
           <div className="mockup-frame">
             <img src={featuresImg} alt="App Preview" loading="lazy" />
           </div>
         </div>
 
-        <div className="download-text-content" data-aos="fade-right">
+        <div className="download-text-content" data-aos="fade-up">
           {/* <p className="download-tag">MOBILE APPS</p> */}
           <h2 className="download-title">Available for your <br/>Smartphones</h2>
           <p className="download-subtitle">

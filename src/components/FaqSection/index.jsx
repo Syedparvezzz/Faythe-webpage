@@ -35,7 +35,7 @@ const FaqSection = () => {
   return (
     <section className="faq-wrapper" id="faqs" data-aos="fade-up">
       <div className="faq-section">
-        <div className="faq-left" data-aos="fade-right">
+        <div className="faq-left" data-aos="fade-up">
           {/* <h4 className="faq-tag">FAQS</h4> */}
           <h2 className="faq-title">Have Questions? Look Here</h2>
           <p className="faq-subtitle">

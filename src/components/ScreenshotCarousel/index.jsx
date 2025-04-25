@@ -59,7 +59,7 @@ const ScreenshotCarousel = () => {
 
   return (
     <section id="application" className="screenshot-section" data-aos="fade-up">
-      <div className="screenshot-header" data-aos="fade-right">
+      <div className="screenshot-header" data-aos="fade-up">
         {/* <p className="section-subtitle">APP PREVIEW</p> */}
         <h2 className="section-title">APP PREVIEW</h2>
         <p className="section-description">

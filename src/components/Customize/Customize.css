@@ -77,6 +77,7 @@
 }
 
 .customizable-card {
+  position: relative;
   background: #fff;
   border-radius: 12px;
   padding: 24px;
@@ -85,13 +86,43 @@
   align-items: flex-start;
   gap: 16px;
   width: 290px;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 0;
+  transition: 
+    box-shadow 0.3s ease, 
+    transform 0.4s ease,
+    color 0.4s ease,
+    background 1.2s ease-in-out;
 }
 
-.customizable-card:hover {
+/* Gradient overlay on hover */
+.customizable-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: linear-gradient(135deg, #C84771, #ECBC55);
+  opacity: 0;
+  transition: opacity 1.0s ease;
+  z-index: 0;
+}
+
+.customizable-card:hover::before {
+  opacity: 1;
+}
+
+
+.customizable-card:hover {
+  transform: scale(1.1); 
   color: white;
 }
+
+
+
+.customizable-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .customizable-card:hover h4,
 .customizable-card:hover p {
@@ -103,6 +134,7 @@
   color: white;
 }
 
+/* Icon style */
 .customizable-card .icon {
   background: transparent;
   padding: 0px;
@@ -112,6 +144,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .customizable-card h4 {
   margin: 0 0 8px;
@@ -135,10 +168,6 @@
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
-}
-
-.customizable-link:hover {
-  color: #C84771;
 }
 
 

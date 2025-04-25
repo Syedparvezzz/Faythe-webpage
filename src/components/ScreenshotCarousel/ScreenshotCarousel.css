@@ -56,8 +56,9 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
     padding: 10px;
     transition: transform 0.3s ease;
-    
+    cursor: pointer; 
   }
+  
   
   .screenshot-card img {
     width: 100%;
@@ -104,4 +105,23 @@
     display: none; 
   }
 
- 
+  @media (max-width: 768px) {
+    .carousel-nav {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-nav {
+      padding: 8px;
+    }
+  
+    .carousel-nav.left {
+      left: 6px;
+    }
+  
+    .carousel-nav.right {
+      right: 6px;
+    }
+  }
+  

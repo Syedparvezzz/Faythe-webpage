@@ -6,7 +6,7 @@ import { Check } from "lucide-react";
 const ElegantDesign = () => {
   return (
     <section className="elegant-container" data-aos="fade-up">
-      <div className="elegant-left" data-aos="fade-right">
+      <div className="elegant-left" data-aos="fade-up">
         {/* <p className="elegant-subtitle">ELEGANT DESIGN</p> */}
         <h2 className="elegant-title">Share your Faith as every post is your Prayer</h2>
         <p className="elegant-description">
@@ -25,7 +25,7 @@ const ElegantDesign = () => {
         </ul>
       </div>
 
-      <div className="elegant-right" data-aos="fade-left">
+      <div className="elegant-right" data-aos="fade-up">
         <img src={Elegantdesign} alt="Elegant Design" loading="lazy" />
       </div>
     </section>

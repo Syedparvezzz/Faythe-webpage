@@ -16,15 +16,32 @@ import ScrollToTopButton from './components/ScrollToTopButton/index.jsx';
 
 function App() {
   useEffect(() => {
+    // Initialize AOS for animations
     AOS.init({
       duration: 1000,
       once: true,
     });
 
-    // Optional: Refresh AOS after mount
+    // Refresh AOS after mount
     setTimeout(() => {
       AOS.refresh();
     }, 500);
+
+    // Handle resize and layout recalculation on page load and image load
+    const handleResize = () => {
+      window.dispatchEvent(new Event('resize')); // Trigger layout recalculation
+    };
+
+    // Fire on mount
+    handleResize();
+
+    // Fire again when all images are loaded
+    window.addEventListener('load', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('load', handleResize);
+    };
   }, []);
 
   return (
