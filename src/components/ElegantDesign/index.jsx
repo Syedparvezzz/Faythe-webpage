@@ -1,6 +1,6 @@
 import React from "react";
 import "./ElegantDesign.css";
-import Elegantdesign from '../../assets/Elegantdesign.png';
+import Elegantdesign from '../../assets/Elegantdesign.webp';
 import { Check } from "lucide-react";
 
 const ElegantDesign = () => {

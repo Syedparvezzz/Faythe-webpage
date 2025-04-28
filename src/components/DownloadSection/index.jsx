@@ -1,9 +1,9 @@
 import React from "react";
 import "./DownloadSection.css";
-import featuresImg from "../../assets/Download.png";
+import featuresImg from "../../assets/Download.webp";
 import { Smartphone, ArrowRight } from "lucide-react";
-import AppStore from "../../assets/DownloadAppStore.png";
-import PlayStore from "../../assets/DownloadPlayStore.png";
+import AppStore from "../../assets/DownloadAppStore.webp";
+import PlayStore from "../../assets/DownloadPlayStore.webp";
 
 const DownloadSection = () => {
   return (

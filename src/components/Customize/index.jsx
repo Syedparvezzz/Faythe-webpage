@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flame, Notebook } from 'lucide-react';
-import CustomizeImage from '../../assets/Features.png';
+import CustomizeImage from '../../assets/Features.webp';
 import './Customize.css';
 
 const Customizable = () => {

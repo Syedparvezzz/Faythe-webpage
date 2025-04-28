@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
-import AppStore from "../../assets/AppStore.png";
-import Playstore from "../../assets/Playstore.png";
+import AppStore from "../../assets/AppStore.webp";
+import Playstore from "../../assets/Playstore.webp";
 import { Menu, X } from "lucide-react";
 
 const sectionIds = ["home", "features", "application", "faqs", "download", "contact"];

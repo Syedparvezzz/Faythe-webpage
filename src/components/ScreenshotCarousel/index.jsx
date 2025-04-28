@@ -3,14 +3,14 @@ import "./ScreenshotCarousel.css";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // optional icon
 import Modal from "../Modal/index.jsx";
 
-import SS01 from "../../assets/SS01.svg";
-import SS02 from "../../assets/SS02.svg";
-import SS03 from "../../assets/SS03.svg";
-import SS04 from "../../assets/SS04.svg";
-import SS05 from "../../assets/SS05.svg";
-import SS06 from "../../assets/SS06.svg";
-import SS07 from "../../assets/SS07.svg";
-import SS08 from "../../assets/SS08.svg";
+import SS01 from "../../assets/SS01.webp";
+import SS02 from "../../assets/SS02.webp";
+import SS03 from "../../assets/SS03.webp";
+import SS04 from "../../assets/SS04.webp";
+import SS05 from "../../assets/SS05.webp";
+import SS06 from "../../assets/SS06.webp";
+import SS07 from "../../assets/SS07.webp";
+import SS08 from "../../assets/SS08.webp";
 
 const ScreenshotCarousel = () => {
   const screenshots = [SS01, SS02, SS03, SS04, SS05, SS06, SS07, SS08];

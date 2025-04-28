@@ -1,9 +1,9 @@
 import React from 'react';
 import './Hero.css';
-import bgImage from '../../assets/Jesus2.jpg';
-import appStore from '../../assets/DownloadAppStore.png';
-import playStore from '../../assets/DownloadPlayStore.png';
-import phone from '../../assets/Phone01.svg'; 
+import bgImage from '../../assets/Jesus2.webp';
+import appStore from '../../assets/DownloadAppStore.webp';
+import playStore from '../../assets/DownloadPlayStore.webp';
+import phone from '../../assets/PhoneHero.webp'; 
 
 const Hero = () => {
   return (

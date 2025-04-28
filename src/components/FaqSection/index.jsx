@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./FaqSection.css";
-import faqImg from "../../assets/FAQs.svg";
+import faqImg from "../../assets/FAQs.webp";
 
 const faqs = [
   {

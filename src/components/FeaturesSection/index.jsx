@@ -7,7 +7,7 @@ import {
   ShoppingCart,
   Flame
 } from 'lucide-react';
-import FeaturesImage from '../../assets/Customizable.svg';
+import FeaturesImage from '../../assets/Customizable.webp';
 import './Features.css';
 import Customizable from '../Customize';
 import ElegantDesign from '../ElegantDesign';
