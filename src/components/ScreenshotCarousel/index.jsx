@@ -42,6 +42,27 @@ const ScreenshotCarousel = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const container = document.querySelector(".carousel-container");
+
+    const handleWheel = (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        window.scrollBy({ top: e.deltaY, behavior: "smooth" });
+      }
+    };
+
+    if (container) {
+      container.addEventListener("wheel", handleWheel, { passive: false });
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener("wheel", handleWheel);
+      }
+    };
+  }, []);
+
   const closeModal = () => {
     setModalImgIndex(null);
     setZoom(1);
@@ -60,15 +81,14 @@ const ScreenshotCarousel = () => {
   return (
     <section id="application" className="screenshot-section" data-aos="fade-up">
       <div className="screenshot-header" data-aos="fade-up">
-        {/* <p className="section-subtitle">APP PREVIEW</p> */}
         <h2 className="section-title">APP PREVIEW</h2>
         <p className="section-description">
-        Take a closer look at how our app works! Below are some screenshots to give you a glimpse of the features and the seamless experience.
+          Take a closer look at how our app works! Below are some screenshots to give you a glimpse of the features and the seamless experience.
         </p>
       </div>
 
       <div className="carousel-wrapper">
-        <button className="carousel-nav left" onClick={() => scroll("left")}>
+        <button className="carousel-nav left" onClick={() => scroll("left")}> 
           <ChevronLeft size={24} color="#de6f00" />
         </button>
 
@@ -86,7 +106,7 @@ const ScreenshotCarousel = () => {
           ))}
         </div>
 
-        <button className="carousel-nav right" onClick={() => scroll("right")}>
+        <button className="carousel-nav right" onClick={() => scroll("right")}> 
           <ChevronRight size={24} color="#de6f00" />
         </button>
       </div>

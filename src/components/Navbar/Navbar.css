@@ -9,14 +9,14 @@
 
 .navbar {
     position: fixed;
-    display: inline;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw; 
     height: 76px;
     background: transparent;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     z-index: 1000;
+    overflow-x: hidden; 
 }
 
 .navbar.scrolled {
@@ -133,8 +133,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-  }
-  
+}
 
 @keyframes slideDown {
     from {

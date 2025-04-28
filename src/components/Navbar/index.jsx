@@ -43,23 +43,27 @@ function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  // 🛠️ Added load event listener to fix layout after images lazy load
   useEffect(() => {
-    const handleResize = () => {
-      window.dispatchEvent(new Event("resize"));
+    const handleLoad = () => {
+      setScrolled(window.scrollY > 10);
+      sectionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= window.innerHeight / 2) {
+          setActiveSection(id);
+        }
+      });
     };
 
-    handleResize(); // Fire once on mount
-    window.addEventListener("load", handleResize); // Fire again when images are loaded
-
+    window.addEventListener("load", handleLoad);
     return () => {
-      window.removeEventListener("load", handleResize);
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const isActive = (id) => (activeSection === id ? "active-link" : "");
 
-  // ✅ Custom names
   const getDisplayName = (id) => {
     if (id === "contact") return "Contact Us";
     if (id === "faqs") return "FAQs";
