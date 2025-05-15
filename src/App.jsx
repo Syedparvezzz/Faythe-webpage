@@ -1,44 +1,38 @@
+// App.jsx
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Navbar from './components/Navbar/index.jsx';
+import Navbar from './components/Navbar';
 import FeaturesSection from './components/FeaturesSection'; 
-import Customizable from './components/Customize/index.jsx';
-import ElegantDesign from './components/ElegantDesign/index.jsx';
+import Customizable from './components/Customize';
+import ElegantDesign from './components/ElegantDesign';
 import Footer from './components/Footer';
-import DownloadSection from './components/DownloadSection/index.jsx';
-import Hero from './components/Hero/index.jsx';
-import ScreenshotCarousel from './components/ScreenshotCarousel/index.jsx';
-import FaqSection from './components/FaqSection/index.jsx';
-import ContactSection from './components/ContactSection/index.jsx';
-import ScrollToTopButton from './components/ScrollToTopButton/index.jsx';
+import DownloadSection from './components/DownloadSection';
+import Hero from './components/Hero';
+import ScreenshotCarousel from './components/ScreenshotCarousel';
+import FaqSection from './components/FaqSection';
+import ContactSection from './components/ContactSection';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   useEffect(() => {
-    // Initialize AOS for animations
     AOS.init({
       duration: 1000,
       once: true,
     });
 
-    // Refresh AOS after mount
     setTimeout(() => {
       AOS.refresh();
     }, 500);
 
-    // Handle resize and layout recalculation on page load and image load
     const handleResize = () => {
-      window.dispatchEvent(new Event('resize')); // Trigger layout recalculation
+      window.dispatchEvent(new Event('resize'));
     };
 
-    // Fire on mount
     handleResize();
-
-    // Fire again when all images are loaded
     window.addEventListener('load', handleResize);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('load', handleResize);
     };
@@ -47,14 +41,14 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <FeaturesSection />
-      <Customizable />
-      <ElegantDesign />
-      <ScreenshotCarousel />
-      <FaqSection />
-      <DownloadSection />
-      <ContactSection />
+      <section id="home"><Hero /></section>
+      <section id="features"><FeaturesSection /></section>
+      <section id="custom"><Customizable /></section>
+      <section id="design"><ElegantDesign /></section>
+      <section id="screenshots"><ScreenshotCarousel /></section>
+      <section id="faq"><FaqSection /></section>
+      <section id="download"><DownloadSection /></section>
+      <section id="contact"><ContactSection /></section>
       <ScrollToTopButton />
       <Footer />
     </div>

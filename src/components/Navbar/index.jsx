@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
 import AppStore from "../../assets/AppStore.webp";
@@ -11,6 +12,9 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +47,6 @@ function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  // 🛠️ Added load event listener to fix layout after images lazy load
   useEffect(() => {
     const handleLoad = () => {
       setScrolled(window.scrollY > 10);
@@ -61,6 +64,31 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const scrollTo = location.state?.scrollTo;
+    if (scrollTo) {
+      const el = document.getElementById(scrollTo);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 300); // Wait for page to render
+      }
+    }
+  }, [location]);
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const isActive = (id) => (activeSection === id ? "active-link" : "");
 
@@ -73,14 +101,19 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-        </div>
+      <div className="logo" onClick={(e) => handleNavClick(e, "home")} style={{ cursor: "pointer" }}>
+  <img src={logo} alt="Logo" />
+</div>
+
 
         <ul className="nav-links">
           {sectionIds.map((id) => (
             <li key={id}>
-              <a href={`#${id}`} className={isActive(id)}>
+              <a
+                href={`#${id}`}
+                className={isActive(id)}
+                onClick={(e) => handleNavClick(e, id)}
+              >
                 {getDisplayName(id)}
               </a>
             </li>
@@ -103,7 +136,7 @@ function Navbar() {
           <ul className="mobile-links">
             {sectionIds.map((id) => (
               <li key={id}>
-                <a href={`#${id}`} onClick={toggleMenu}>
+                <a href={`#${id}`} onClick={(e) => handleNavClick(e, id)}>
                   {getDisplayName(id)}
                 </a>
               </li>

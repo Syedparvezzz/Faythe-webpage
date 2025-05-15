@@ -8,6 +8,7 @@
     "@makotot/ghostui": "^2.0.0",
     "aos": "^2.3.4",
     "lucide-react": "^0.487.0",
+    "react-router-dom": "^7.6.0",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
