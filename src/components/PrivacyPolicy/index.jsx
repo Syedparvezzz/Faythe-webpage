@@ -21,52 +21,66 @@ const PrivacyPolicy = () => {
 
       <Section
         title="1. Introduction"
-        content="We are committed to protecting your personal information and your right to privacy. 
-        This Privacy Policy outlines how we collect, use, and protect your information when you 
-        use our website."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="2. Information We Collect"
-        content="We may collect personal information that you voluntarily provide to us such as 
-        your name, email address, and other contact details. We also collect non-personal 
-        information such as browser type and device information."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="3. How We Use Your Information"
-        content="We use your information to provide, operate, and maintain our website, improve 
-        user experience, communicate with you, and comply with legal obligations."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="4. Sharing Your Information"
-        content="We do not share your personal information with third parties except when necessary 
-        to provide services, comply with the law, or protect our rights."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="5. Cookies and Tracking"
-        content="We may use cookies and similar tracking technologies to track the activity on our 
-        site and hold certain information to improve user experience."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="6. Data Security"
-        content="We take reasonable steps to protect your personal information. However, no method 
-        of transmission over the Internet is 100% secure."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="7. Your Rights"
-        content="You have the right to access, update, or delete your personal information. You may 
-        also opt out of receiving marketing communications from us."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <Section
         title="8. Changes to This Privacy Policy"
-        content="We may update our Privacy Policy from time to time. Changes will be posted on this 
-        page with an updated effective date."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, 
+        nibh nec vestibulum luctus, velit libero scelerisque metus, a porttitor 
+        leo ipsum a lorem. Quisque iaculis odio sed dui congue, a dignissim elit 
+        tristique."
       />
 
       <p style={{ fontSize: "0.9rem", marginTop: "2rem", color: "#555" }}>
