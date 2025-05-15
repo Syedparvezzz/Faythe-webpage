@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react"; // optional icon
+import { ArrowUp } from "lucide-react"; 
 import "./ScrollToTopButton.css";
 
 const ScrollToTopButton = () => {

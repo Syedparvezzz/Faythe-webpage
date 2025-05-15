@@ -71,7 +71,7 @@ function Navbar() {
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
-        }, 300); // Wait for page to render
+        }, 300); 
       }
     }
   }, [location]);

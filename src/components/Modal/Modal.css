@@ -1,4 +1,3 @@
-/* Modal Overlay: fullscreen blur background */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -13,7 +12,7 @@
     align-items: center;
   }
   
-  /* Modal content wrapper */
+
   .modal-full {
     position: relative;
     width: 100%;
@@ -24,7 +23,7 @@
     justify-content: center;
   }
   
-  /* Toolbar: Top right buttons */
+
   .modal-toolbar {
     position: absolute;
     top: 16px;
@@ -48,7 +47,7 @@
     background: rgba(255, 255, 255, 0.2);
   }
   
-  /* Image & navigation arrows */
+  
   .modal-image-wrapper {
     width: 100%;
     height: 100%;
@@ -66,7 +65,7 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   }
   
-  /* Left & right arrow buttons */
+
   .modal-arrow {
     position: absolute;
     top: 50%;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ScreenshotCarousel.css";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // optional icon
+import { ChevronLeft, ChevronRight } from "lucide-react"; 
 import Modal from "../Modal/index.jsx";
 
 import SS01 from "../../assets/SS01.webp";
