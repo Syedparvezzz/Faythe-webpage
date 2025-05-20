@@ -42,27 +42,6 @@ const ScreenshotCarousel = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const container = document.querySelector(".carousel-container");
-
-    const handleWheel = (e) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        e.preventDefault();
-        window.scrollBy({ top: e.deltaY, behavior: "smooth" });
-      }
-    };
-
-    if (container) {
-      container.addEventListener("wheel", handleWheel, { passive: false });
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener("wheel", handleWheel);
-      }
-    };
-  }, []);
-
   const closeModal = () => {
     setModalImgIndex(null);
     setZoom(1);
